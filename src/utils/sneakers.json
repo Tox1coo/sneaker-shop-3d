@@ -1,0 +1,109 @@
+[
+	{
+		"nameFolder": "charge-convers",
+		"nameShoes": "Nike Charge Convers ",
+		"settingModel": {
+			"positionCamera": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scaleModel": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		}
+	},
+	{
+		"nameFolder": "pegasus",
+		"nameShoes": "Nike Pegasus",
+		"settingModel": {
+			"positionCamera": {
+				"x": 0,
+				"y": 40,
+				"z": 25
+			},
+			"scaleModel": {
+				"x": 5,
+				"y": 5,
+				"z": 5
+			}
+		}
+	},
+	{
+		"nameFolder": "air_force",
+		"nameShoes": "Nike Air Force",
+		"settingModel": {
+			"positionCamera": {
+				"z": 1
+			},
+			"scaleModel": {
+				"x": 4,
+				"y": 4,
+				"z": 4
+			},
+			"rotationModel": {
+				"y": 0.2
+			},
+			"positionModel": {
+				"x": 0.1
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_air_zoom",
+		"nameShoes": "Nike Air Zoom Structure",
+		"settingModel": {
+			"positionCamera": {
+				"z": 7
+			},
+			"scaleModel": {
+				"x": 4,
+				"y": 4,
+				"z": 4
+			},
+			"rotationModel": {
+				"y": 1.5
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_air_zoom_pegasus_36",
+		"nameShoes": "Nike Air Zoom Pegasus",
+		"settingModel": {
+			"positionCamera": {
+				"z": 7
+			},
+			"scaleModel": {
+				"x": 4,
+				"y": 4,
+				"z": 4
+			},
+			"rotationModel": {
+				"y": 1.5
+			}
+		}
+	},
+	{
+		"nameFolder": "nike",
+		"nameShoes": "Nike Air Zoom",
+		"settingModel": {
+			"positionCamera": {
+				"z": 10,
+				"y": 1
+			},
+			"scaleModel": {
+				"x": 0.06,
+				"y": 0.06,
+				"z": 0.06
+			},
+			"rotationModel": {
+				"y": 3.2
+			},
+			"positionModel": {
+				"x": -0.04
+			}
+		}
+	}
+]

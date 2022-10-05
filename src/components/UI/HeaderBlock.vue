@@ -16,8 +16,9 @@ export default {
 				title: 'All',
 				link: '/'
 			},
-		]
-		return { linkList }
+		];
+		const iconList = ['user', 'search', 'bucket']
+		return { linkList, iconList }
 	},
 	name: 'HeaderBlock',
 	components: {
@@ -45,8 +46,8 @@ export default {
 				<div class="header__title">
 					<span>Your</span>Sneaker
 				</div>
-				<div class="header__user">
-
+				<div class="header__icons">
+					<IconItem v-for="icon in iconList" :key="icon" :path="icon"></IconItem>
 				</div>
 			</div>
 		</div>
@@ -66,6 +67,8 @@ export default {
 		font-size: 3.2rem;
 		letter-spacing: 1px;
 		font-weight: 700;
+		flex: 0 1 33%;
+		text-align: center;
 
 		span {
 			color: #a0a0a0;
@@ -77,6 +80,13 @@ export default {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	&__icons {
+		flex: 0 1 20%;
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
 	}
 }
 
@@ -98,8 +108,8 @@ export default {
 			color: $title-color;
 			font-size: $text-medium-fonts;
 			text-decoration: none;
+			transition: all 0.2s easy;
 			font-weight: 400;
-			transition: all 0.2s linear;
 
 			&:hover {
 
@@ -107,7 +117,7 @@ export default {
 					transform: translateY(0);
 				}
 
-				font-weight: 700;
+				font-weight:700;
 			}
 		}
 	}
@@ -117,7 +127,7 @@ export default {
 		width: 100%;
 		height: 3px;
 		background-color: $title-color;
-		transition: transform 0.2s ease 0.2s;
+		transition: transform 0.2s ease 0.1s;
 		transform: translateY(100%);
 	}
 }

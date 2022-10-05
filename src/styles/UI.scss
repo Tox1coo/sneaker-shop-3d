@@ -17,3 +17,60 @@ html {
 	padding: 15px;
 	margin: 0 auto;
 }
+
+/* btn */
+
+.btn {
+	padding: 1rem 2.5rem;
+	border-radius: 1.6rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	&--dark {
+		font-size: 2rem;
+		background-color: $primary2;
+		color: $primary1;
+		transition: background-color 0.3s ease, color 0.3s ease 0.15s;
+		&:hover {
+			background-color: $primary1;
+			color: $primary2;
+		}
+	}
+	&--light {
+		font-size: 1.6rem;
+		background-color: $primary1;
+		color: $primary2;
+		transition: background-color 0.3s ease, color 0.3s ease 0.15s;
+		&:hover {
+			background-color: $primary2;
+			color: $primary1;
+		}
+	}
+}
+
+/* texts */
+
+.title {
+	font-size: $title-big-fonts;
+	color: $title-color;
+	font-weight: 900;
+	font-style: italic;
+	&--light {
+		color: $title-color-light;
+	}
+	&--medium {
+		font-size: $title-medium-fonts;
+	}
+}
+
+.text {
+	color: $text-color;
+	font-size: $text-big-fonts;
+	&--light {
+		font-size: $text-medium-fonts;
+		color: $text-color-light;
+	}
+	&--bold {
+		font-weight: 900;
+	}
+}

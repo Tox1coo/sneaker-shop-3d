@@ -46,6 +46,26 @@ html {
 			color: $primary1;
 		}
 	}
+	&--icons {
+		padding: 0;
+		width: 55px;
+		height: 55px;
+		background-color: $primary1;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: background-color 0.2s ease 0s;
+		svg {
+			transition: fill 0.2s ease 0.1s;
+		}
+		&:hover {
+			background-color: $primary2;
+			svg {
+				fill: $svg-hover-color;
+			}
+		}
+	}
 }
 
 /* texts */

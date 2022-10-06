@@ -1,7 +1,9 @@
 <script>
 import HeroSection from '../components/Hero/HeroSection.vue';
+import SneakersSection from '../components/Sneakers/SneakersSection.vue';
+import ShoesScene from '../components/Scene/ShoesScene.vue';
 export default {
-  components: { HeroSection }
+  components: { HeroSection, SneakersSection, ShoesScene }
 }
 </script>
 
@@ -9,5 +11,6 @@ export default {
 
   <main>
     <HeroSection></HeroSection>
+    <SneakersSection></SneakersSection>
   </main>
 </template>

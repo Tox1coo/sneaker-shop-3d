@@ -1,108 +1,169 @@
 [
 	{
-		"nameFolder": "charge-convers",
-		"nameShoes": "Nike Charge Convers ",
+		"nameFolder": "nike_air_zoom_pegasus_36",
+		"nameShoes": "Nike Air Zoom Pegasus",
 		"settingModel": {
-			"positionCamera": {
-				"x": 0,
-				"y": 0,
-				"z": 0
-			},
+			"zoomCamera": 1.5,
 			"scaleModel": {
-				"x": 0,
-				"y": 0,
-				"z": 0
+				"x": 7,
+				"y": 7,
+				"z": 7
+			},
+			"rotationModel": {
+				"y": 3.5
+			},
+			"positionModel": {
+				"y": 25
 			}
 		}
 	},
 	{
-		"nameFolder": "pegasus",
-		"nameShoes": "Nike Pegasus",
+		"nameFolder": "air_jordan",
+		"nameShoes": "Nike Air Jordan",
 		"settingModel": {
-			"positionCamera": {
-				"x": 0,
-				"y": 40,
-				"z": 25
+			"zoomCamera": 1.5,
+			"scaleModel": {
+				"x": 0.6,
+				"y": 0.6,
+				"z": 0.6
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_react_presto_running_shoes",
+		"nameShoes": "Nike React Presto",
+		"settingModel": {
+			"zoomCamera": 1.5,
+			"rotationModel": {
+				"y": 2
 			},
+			"scaleModel": {
+				"x": 1,
+				"y": 1,
+				"z": 1
+			},
+			"positionModel": {
+				"y": 22
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_zoom_pegasus_35",
+		"nameShoes": "Nike Zoom Pegasus",
+		"settingModel": {
+			"zoomCamera": 1.5,
+			"positionModel": {
+				"y": 21.8
+			},
+			"scaleModel": {
+				"x": 3,
+				"y": 3,
+				"z": 3
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_lunartempo_2",
+		"nameShoes": "Nike Lunartempo 2",
+		"settingModel": {
+			"zoomCamera": 1.5,
+			"scaleModel": {
+				"x": 1.5,
+				"y": 1.5,
+				"z": 1.5
+			},
+			"positionModel": {
+				"y": 38.2,
+				"x": 5
+			},
+			"rotationModel": {
+				"y": 1.5
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_air_max_90",
+		"nameShoes": "Nike Air Max 90",
+		"settingModel": {
+			"zoomCamera": 1.5,
+			"scaleModel": {
+				"x": 40,
+				"y": 40,
+				"z": 40
+			},
+			"positionModel": {
+				"y": 21.8
+			},
+			"rotationModel": {
+				"y": 1.5
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_air_zoom_structure_24",
+		"nameShoes": "Nike Air Zoom Structure 24",
+		"settingModel": {
+			"zoomCamera": 1.5,
+			"scaleModel": {
+				"x": 10,
+				"y": 10,
+				"z": 10
+			},
+			"positionModel": {
+				"y": 25.4
+			},
+			"rotationModel": {
+				"y": 1.5
+			}
+		}
+	},
+	{
+		"nameFolder": "nike_dunk_hawaii",
+		"nameShoes": "Nike Dunk Hawaii",
+		"settingModel": {
+			"zoomCamera": 1.5,
+			"scaleModel": {
+				"x": 60,
+				"y": 60,
+				"z": 60
+			},
+			"positionModel": {
+				"y": -37.7,
+				"z": 60
+			}
+		}
+	},
+	{
+		"nameFolder": "pegasus_trail",
+		"nameShoes": "Nike Pegasus Trail",
+		"settingModel": {
+			"zoomCamera": 1.5,
 			"scaleModel": {
 				"x": 5,
 				"y": 5,
 				"z": 5
-			}
-		}
-	},
-	{
-		"nameFolder": "air_force",
-		"nameShoes": "Nike Air Force",
-		"settingModel": {
-			"positionCamera": {
-				"z": 1
-			},
-			"scaleModel": {
-				"x": 4,
-				"y": 4,
-				"z": 4
-			},
-			"rotationModel": {
-				"y": 0.2
 			},
 			"positionModel": {
-				"x": 0.1
+				"y": 44.4,
+				"z": 30
 			}
 		}
 	},
 	{
-		"nameFolder": "nike_air_zoom",
-		"nameShoes": "Nike Air Zoom Structure",
+		"nameFolder": "nike_kaiju_snowboard_boot",
+		"nameShoes": "Nike Snowboard Boot",
 		"settingModel": {
-			"positionCamera": {
-				"z": 7
-			},
+			"zoomCamera": 1.5,
 			"scaleModel": {
-				"x": 4,
-				"y": 4,
-				"z": 4
+				"x": 50,
+				"y": 50,
+				"z": 50
+			},
+			"positionModel": {
+				"y": 29.8
 			},
 			"rotationModel": {
 				"y": 1.5
-			}
-		}
-	},
-	{
-		"nameFolder": "nike_air_zoom_pegasus_36",
-		"nameShoes": "Nike Air Zoom Pegasus",
-		"settingModel": {
-			"positionCamera": {
-				"z": 7
-			},
-			"scaleModel": {
-				"x": 4,
-				"y": 4,
-				"z": 4
-			},
-			"rotationModel": {
-				"y": 1.5
-			}
-		}
-	},
-	{
-		"nameFolder": "nike",
-		"nameShoes": "Nike Air Zoom",
-		"settingModel": {
-			"positionCamera": {
-				"z": 10,
-				"y": 1
-			},
-			"scaleModel": {
-				"x": 0.06,
-				"y": 0.06,
-				"z": 0.06
-			},
-			"rotationModel": {
-				"y": 3.2
-			},
-			"positionModel": {
-				"x": -0.04
 			}
 		}
 	}

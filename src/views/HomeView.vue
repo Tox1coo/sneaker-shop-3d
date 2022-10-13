@@ -12,5 +12,6 @@ export default {
   <main>
     <HeroSection></HeroSection>
     <SneakersSection></SneakersSection>
+    <ShoesScene></ShoesScene>
   </main>
 </template>

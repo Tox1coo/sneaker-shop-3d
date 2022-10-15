@@ -1,9 +1,9 @@
 <script>
-import HeroSection from '../components/Hero/HeroSection.vue';
-import SneakersSection from '../components/Sneakers/SneakersSection.vue';
-import ShoesScene from '../components/Scene/ShoesScene.vue';
+import HeroSection from '@/components/Hero/HeroSection.vue';
+import SneakersSection from '@/components/Sneakers/SneakersSection.vue';
+import SliderSneakerSection from '@/components/Sneakers/SliderSneakerSection.vue';
 export default {
-  components: { HeroSection, SneakersSection, ShoesScene }
+  components: { HeroSection, SneakersSection, SliderSneakerSection }
 }
 </script>
 
@@ -11,7 +11,9 @@ export default {
 
   <main>
     <HeroSection></HeroSection>
-    <SneakersSection></SneakersSection>
-    <ShoesScene></ShoesScene>
+    <div class="container">
+      <SneakersSection></SneakersSection>
+      <SliderSneakerSection></SliderSneakerSection>
+    </div>
   </main>
 </template>

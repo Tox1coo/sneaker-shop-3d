@@ -20,7 +20,7 @@ export default {
 	},
 	computed: {
 		getActiveSneakers() {
-			return 9
+			return 0
 		},
 		getPositionCamera() {
 			return this.dbSneakers[this.getActiveSneakers]?.settingModel?.positionCamera || { x: 0, y: 0, z: 0 }
@@ -35,6 +35,7 @@ export default {
 			model.scene.children[0].position.z = 0
 			model.scene.children[0].position.y = 0
 			// model.scene.children[0].rotation.set(0, 0, 0)
+			this.scene.scene.fog = new THREE.Fog(0x9C1E58, 0, 1000);
 			console.log(model.scene.children[0]
 			);
 			model.scene.traverse(o => {
@@ -53,7 +54,7 @@ export default {
 
 <template>
 	<Renderer ref="render" antialias alpha resize="window"
-		:orbit-ctrl="{ enableDamping: true, dampingFactor: 0.8,  maxDistance: 90, minDistance: 20, target: target, }"
+		:orbit-ctrl="{ enableDamping: true, dampingFactor: 0.8,  maxDistance: 90, minDistance:40, target: target, }"
 		shadow>
 		<Camera :lookAt="target" :props="{zoom: this.dbSneakers[this.getActiveSneakers]?.settingModel?.zoomCamera || 1}"
 			ref="camera" :position="{x:0, y: 70, z:70 }" />
@@ -83,3 +84,10 @@ export default {
 
 	</Renderer>
 </template>
+
+
+<style lang="scss" scoped>
+canvas {
+	cursor: pointer;
+}
+</style>

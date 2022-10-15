@@ -19,11 +19,7 @@ export default {
 			required: true
 		}
 	},
-	computed: {
-		getSneakerPhoto() {
-			return new URL(`/src/assets/${this.sneakerPhoto}.png`, import.meta.url)
-		}
-	}
+
 }
 </script>
 
@@ -31,23 +27,51 @@ export default {
 	<div class="card-category">
 		<div class="card-category__body">
 			<h3 class="title title--card title--accent">{{typeCard}}</h3>
-			<p class="text">{{textCard}}</p>
+			<p class="text ">{{textCard}}</p>
 			<MyButton :class="{'btn--icons':buttonCard === 'icon' }">
 				<slot></slot>
 			</MyButton>
 		</div>
-		<img :src="getSneakerPhoto" alt="">
+		<img class="card-category__photo" :src="sneakerPhoto" alt="">
 	</div>
 </template>
 
 
 <style lang="scss" scoped>
+@import "@/styles/mixins.scss";
+
 .card-category {
+	@include styleCards;
 	max-width: 60.5rem;
-	max-height: 26.5rem;
+	width: 100%;
 	min-height: 26rem;
-	border-radius: 1.8rem;
-	background-color: $card-bgcolor;
-	box-shadow: $primary-shadow;
+	padding-top: 5rem;
+	padding-left: 5rem;
+	padding-bottom: 3.5rem;
+	position: relative;
+
+	&__body {
+		width: 40%;
+
+		.btn {
+			margin-top: 1.5rem;
+			margin-left: 3rem;
+		}
+
+		.text {
+			margin-top: 1rem;
+		}
+	}
+
+	&__photo {
+		width: 100%;
+		max-width: 40rem;
+		max-height: 30rem;
+		display: block;
+		position: absolute;
+		right: -10px;
+		top: -15px;
+		transform: rotate(-30deg);
+	}
 }
 </style>

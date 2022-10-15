@@ -1,0 +1,5 @@
+@mixin styleCards() {
+	border-radius: $radius-max;
+	background-color: $card-bgcolor;
+	box-shadow: $primary-shadow;
+}

@@ -1,7 +1,8 @@
 [
 	{
 		"nameFolder": "nike_air_zoom_pegasus_36",
-		"nameShoes": "Nike Air Zoom Pegasus",
+		"nameShoes": "Nike Air Zoom Pegasus 36",
+		"linkImage": "8FcB8NTX/nike-air-zoom-pegasus-36.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -15,11 +16,13 @@
 			"positionModel": {
 				"y": 25
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "air_jordan",
 		"nameShoes": "Nike Air Jordan",
+		"linkImage": "0KD0tn98/air-jordan.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -27,11 +30,13 @@
 				"y": 0.6,
 				"z": 0.6
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "nike_react_presto_running_shoes",
 		"nameShoes": "Nike React Presto",
+		"linkImage": "w7xk5hSd/nike-react-presto-running-shoes.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"rotationModel": {
@@ -45,11 +50,13 @@
 			"positionModel": {
 				"y": 22
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "nike_zoom_pegasus_35",
-		"nameShoes": "Nike Zoom Pegasus",
+		"nameShoes": "Nike Zoom Pegasus 35",
+		"linkImage": "V0Qjbtn2/nike-zoom-pegasus-35.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"positionModel": {
@@ -60,11 +67,17 @@
 				"y": 3,
 				"z": 3
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "nike_lunartempo_2",
 		"nameShoes": "Nike Lunartempo 2",
+		"linkImage": "D8hrvq2X/nike-lunartempo-2.webp",
+		"cardSetting": {
+			"type": "new",
+			"button": "icon"
+		},
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -79,11 +92,13 @@
 			"rotationModel": {
 				"y": 1.5
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "nike_air_max_90",
 		"nameShoes": "Nike Air Max 90",
+		"linkImage": "PNwyrXYB/nike-air-max-90.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -97,11 +112,13 @@
 			"rotationModel": {
 				"y": 1.5
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "nike_air_zoom_structure_24",
 		"nameShoes": "Nike Air Zoom Structure 24",
+		"linkImage": "0bCpbbQH/nike-air-zoom-structure-24.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -115,11 +132,17 @@
 			"rotationModel": {
 				"y": 1.5
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "nike_dunk_hawaii",
 		"nameShoes": "Nike Dunk Hawaii",
+		"linkImage": "zVdFxyrH/nike-dunk-hawaii.webp",
+		"cardSetting": {
+			"type": "new",
+			"button": "icon"
+		},
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -131,11 +154,13 @@
 				"y": -37.7,
 				"z": 60
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "pegasus_trail",
-		"nameShoes": "Nike Pegasus Trail",
+		"nameShoes": "Nike Air Zoom Pegasus Trail 2",
+		"linkImage": "DWSsj6ct/nike-pegasus-trail.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -147,11 +172,13 @@
 				"y": 44.4,
 				"z": 30
 			}
-		}
+		},
+		"price": 20.99
 	},
 	{
 		"nameFolder": "nike_kaiju_snowboard_boot",
 		"nameShoes": "Nike Snowboard Boot",
+		"linkImage": "cvrM2dx9/nike-snowboard-noot.webp",
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -165,6 +192,7 @@
 			"rotationModel": {
 				"y": 1.5
 			}
-		}
+		},
+		"price": 20.99
 	}
 ]

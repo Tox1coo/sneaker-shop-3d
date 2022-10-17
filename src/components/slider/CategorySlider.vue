@@ -47,6 +47,8 @@ export default {
 
 
 <style lang="scss" scoped>
+.slider {}
+
 .swiper-container {
 	padding: 0 20px;
 	margin-top: 3.3rem;

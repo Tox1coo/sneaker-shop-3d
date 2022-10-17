@@ -37,7 +37,7 @@ export default {
 .hero {
 	min-height: 300px;
 	display: flex;
-	max-height: 300px;
+	min-height: 300px;
 
 	&__image {
 		width: 50%;
@@ -48,12 +48,12 @@ export default {
 		width: 50%;
 		background-color: $primary2;
 
-		.title {
-			margin-bottom: 3rem;
+		.btn {
+			margin-top: 3.5rem;
 		}
 
 		.text {
-			margin-bottom: 3rem;
+			margin-top: 3.5rem;
 		}
 	}
 }

@@ -1,5 +1,4 @@
 <script>
-import MyButton from '../UI/MyButton.vue';
 
 export default {
 	props: {
@@ -8,7 +7,6 @@ export default {
 			required: true
 		},
 	},
-	components: { MyButton }
 }
 </script>
 
@@ -52,9 +50,9 @@ export default {
 		max-height: 20rem;
 		position: absolute;
 		z-index: 2;
-		left: 30%;
+		left: 20%;
 		top: 10%;
-		transform: rotate(-35deg) translate(-30%, -10%)
+		transform: rotate(-35deg) translate(-20%, -10%)
 	}
 
 	&__logo {
@@ -84,7 +82,7 @@ export default {
 	}
 
 	&__price {
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 }
 </style>

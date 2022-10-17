@@ -4,10 +4,8 @@ import { sneakersStore } from "@/stores/sneakers/sneakers"
 export default {
 	setup() {
 		const sneakers = sneakersStore().dbSneakers;
-		const imageLink = sneakersStore().LINKIMAGES
-		console.log(sneakers);
 
-		return { sneakers, imageLink }
+		return { sneakers }
 	},
 	computed: {
 		getNewModelsShoes() {
@@ -21,8 +19,8 @@ export default {
 <template>
 	<section class="sneakers">
 		<div class="sneakers__cards">
-			<CardCategory v-for="sneaker in getNewModelsShoes" :key="sneaker.name" :typeCard="sneaker?.cardSetting?.type"
-				:textCard="sneaker.nameShoes" :buttonCard="sneaker?.cardSetting?.button"
+			<CardCategory v-for="sneaker in getNewModelsShoes" :key="sneaker.id" :titleCard="sneaker?.cardSetting?.type"
+				:textCard="sneaker.nameShoes"
 				:sneakerPhoto="`./photo_sneakers/sneakers/${sneaker.nameFolder}/card_preview/${sneaker.nameFolder}.webp`">
 				<svg width="19" height="15" viewBox="0 0 19 15" fill="black" xmlns="http://www.w3.org/2000/svg">
 					<path

@@ -84,8 +84,10 @@ html {
 		font-size: $title-medium-fonts;
 	}
 	&--accent {
-		text-transform: uppercase;
 		color: $attention-color;
+	}
+	&--small {
+		font-size: $title-att-small-fonts;
 	}
 	&--mild {
 		font-weight: 700;

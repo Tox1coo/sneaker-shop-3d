@@ -2,7 +2,7 @@
 
 export default {
 	props: {
-		typeCard: {
+		titleCard: {
 			type: String,
 			required: true,
 		},
@@ -26,9 +26,10 @@ export default {
 <template>
 	<div class="card-category">
 		<div class="card-category__body">
-			<h3 class="title title--card title--accent">{{typeCard}}</h3>
-			<p class="text ">{{textCard}}</p>
-			<MyButton :class="{'btn--icons':buttonCard === 'icon' }">
+			<div class="title title--accent" :class="{'title--accent--small':titleCard !== 'new' }" v-html="titleCard">
+			</div>
+			<p class="text">{{textCard}}</p>
+			<MyButton :class="{'btn--icons':titleCard === 'new', 'btn--dark':titleCard !== 'new'}">
 				<slot></slot>
 			</MyButton>
 		</div>
@@ -37,7 +38,7 @@ export default {
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import "@/styles/mixins.scss";
 
 .card-category {
@@ -53,9 +54,29 @@ export default {
 	&__body {
 		width: 40%;
 
+		.title {
+			text-transform: uppercase;
+
+			&--accent--small {
+				text-transform: none;
+				font-size: $title-att-small-fonts;
+
+				span {
+					font-size: $title-att-medium-fonts;
+				}
+			}
+		}
+
 		.btn {
-			margin-top: 1.5rem;
-			margin-left: 3rem;
+
+			&--icons {
+				margin-top: 1.5rem;
+				margin-left: 3rem;
+			}
+
+			&--dark {
+				margin-top: 3rem;
+			}
 		}
 
 		.text {

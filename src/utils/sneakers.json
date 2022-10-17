@@ -1,5 +1,6 @@
 [
 	{
+		"id": 1,
 		"nameFolder": "nike_air_zoom_pegasus_36",
 		"nameShoes": "Nike Air Zoom Pegasus 36",
 		"linkImage": "8FcB8NTX/nike-air-zoom-pegasus-36.webp",
@@ -20,9 +21,13 @@
 		"price": 20.99
 	},
 	{
+		"id": 2,
 		"nameFolder": "air_jordan",
 		"nameShoes": "Nike Air Jordan",
 		"linkImage": "0KD0tn98/air-jordan.webp",
+		"cardSetting": {
+			"type": "discount"
+		},
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -34,6 +39,7 @@
 		"price": 20.99
 	},
 	{
+		"id": 3,
 		"nameFolder": "nike_react_presto_running_shoes",
 		"nameShoes": "Nike React Presto",
 		"linkImage": "w7xk5hSd/nike-react-presto-running-shoes.webp",
@@ -54,6 +60,7 @@
 		"price": 20.99
 	},
 	{
+		"id": 4,
 		"nameFolder": "nike_zoom_pegasus_35",
 		"nameShoes": "Nike Zoom Pegasus 35",
 		"linkImage": "V0Qjbtn2/nike-zoom-pegasus-35.webp",
@@ -71,12 +78,12 @@
 		"price": 20.99
 	},
 	{
+		"id": 5,
 		"nameFolder": "nike_lunartempo_2",
 		"nameShoes": "Nike Lunartempo 2",
 		"linkImage": "D8hrvq2X/nike-lunartempo-2.webp",
 		"cardSetting": {
-			"type": "new",
-			"button": "icon"
+			"type": "new"
 		},
 		"settingModel": {
 			"zoomCamera": 1.5,
@@ -96,6 +103,7 @@
 		"price": 20.99
 	},
 	{
+		"id": 6,
 		"nameFolder": "nike_air_max_90",
 		"nameShoes": "Nike Air Max 90",
 		"linkImage": "PNwyrXYB/nike-air-max-90.webp",
@@ -116,6 +124,7 @@
 		"price": 20.99
 	},
 	{
+		"id": 7,
 		"nameFolder": "nike_air_zoom_structure_24",
 		"nameShoes": "Nike Air Zoom Structure 24",
 		"linkImage": "0bCpbbQH/nike-air-zoom-structure-24.webp",
@@ -136,12 +145,12 @@
 		"price": 20.99
 	},
 	{
+		"id": 8,
 		"nameFolder": "nike_dunk_hawaii",
 		"nameShoes": "Nike Dunk Hawaii",
 		"linkImage": "zVdFxyrH/nike-dunk-hawaii.webp",
 		"cardSetting": {
-			"type": "new",
-			"button": "icon"
+			"type": "new"
 		},
 		"settingModel": {
 			"zoomCamera": 1.5,
@@ -158,9 +167,13 @@
 		"price": 20.99
 	},
 	{
+		"id": 9,
 		"nameFolder": "pegasus_trail",
-		"nameShoes": "Nike Air Zoom Pegasus Trail 2",
+		"nameShoes": "Nike Pegasus Trail 2",
 		"linkImage": "DWSsj6ct/nike-pegasus-trail.webp",
+		"cardSetting": {
+			"type": "discount"
+		},
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -171,26 +184,6 @@
 			"positionModel": {
 				"y": 44.4,
 				"z": 30
-			}
-		},
-		"price": 20.99
-	},
-	{
-		"nameFolder": "nike_kaiju_snowboard_boot",
-		"nameShoes": "Nike Snowboard Boot",
-		"linkImage": "cvrM2dx9/nike-snowboard-noot.webp",
-		"settingModel": {
-			"zoomCamera": 1.5,
-			"scaleModel": {
-				"x": 50,
-				"y": 50,
-				"z": 50
-			},
-			"positionModel": {
-				"y": 29.8
-			},
-			"rotationModel": {
-				"y": 1.5
 			}
 		},
 		"price": 20.99

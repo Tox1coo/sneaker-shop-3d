@@ -114,7 +114,7 @@ export default {
 			&:hover {
 
 				&+.nav__underline {
-					transform: translateY(0);
+					transform: scaleX(1);
 				}
 
 				font-weight:700;
@@ -128,7 +128,7 @@ export default {
 		height: 3px;
 		background-color: $title-color;
 		transition: transform 0.2s ease 0.1s;
-		transform: translateY(100%);
+		transform: scaleX(0);
 	}
 }
 </style>

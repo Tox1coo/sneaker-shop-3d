@@ -1,23 +1,24 @@
 <script>
-import HeroLogo from "./HeroLogo.vue";
+import Logo from "./Logo.vue";
+import SectionInfo from "../Blocks/SectionInfo.vue";
 
 export default {
-	components: { HeroLogo }
+	components: { Logo, SectionInfo },
+	computed: {
+		getTextInfo() {
+			return `Celebrating 50 years of Nike from May 16th!
+				Exclusive products, experiences and much more await you for five days. Scan and join the Nike app!`
+		}
+	}
 }
 </script>
 
 <template>
 	<section class="hero">
-		<div class="hero__info">
-			<h2 class="title title--light title--medium">WE ARE NEVER DONE</h2>
-			<p class="text text--light text--bold">
-				Celebrating 50 years of Nike from May 16th!
-				Exclusive products, experiences and much more await you for five days. Scan and join the Nike app!
-			</p>
-			<MyButton class="btn--light">Celebrate with us
-			</MyButton>
-		</div>
+
+		<SectionInfo :title="'WE ARE NEVER DONE'" :text="getTextInfo" :buttonText="'Celebrate with us'"></SectionInfo>
 		<img class="hero__image" src="../../assets/hero.png" alt="">
+
 	</section>
 	<marquee scrollamount="8" truespeed scrolldelay="25" direction="right" class="marquee">
 		<div v-for="item in 10" :key="item" class="marquee__item">
@@ -29,33 +30,25 @@ export default {
 			</svg>
 		</div>
 	</marquee>
-	<HeroLogo></HeroLogo>
+	<Logo></Logo>
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 .hero {
-	min-height: 300px;
+	min-height: 30rem;
 	display: flex;
-	min-height: 300px;
+
 
 	&__image {
 		width: 50%;
 	}
 
-	&__info {
-		padding: 50px 50px 30px;
-		width: 50%;
+	.info {
 		background-color: $primary2;
-
-		.btn {
-			margin-top: 3.5rem;
-		}
-
-		.text {
-			margin-top: 3.5rem;
-		}
+		width: 50%;
 	}
+
 }
 
 .marquee {

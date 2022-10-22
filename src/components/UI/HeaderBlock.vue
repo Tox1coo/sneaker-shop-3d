@@ -33,6 +33,7 @@ export default {
 		<div class="container">
 
 			<div class="header__inner">
+				<BurgerMenu></BurgerMenu>
 				<nav class="nav">
 					<ul class="nav__list">
 						<li v-for="link in linkList" :key="link.title" class="nav__item">
@@ -47,7 +48,10 @@ export default {
 					<span>Your</span>Sneaker
 				</div>
 				<div class="header__icons">
-					<IconItem v-for="icon in iconList" :key="icon" :path="icon"></IconItem>
+					<div v-for="icon in iconList" :key="icon" class="header__icons-item" :data-icon="icon">
+						<IconItem :path="icon"></IconItem>
+
+					</div>
 				</div>
 			</div>
 		</div>

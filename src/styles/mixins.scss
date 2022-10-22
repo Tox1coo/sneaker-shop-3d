@@ -3,3 +3,10 @@
 	background-color: $card-bgcolor;
 	box-shadow: $primary-shadow;
 }
+
+@mixin margin-section {
+	margin-top: $margin-sections;
+	@media (max-width: 719px) {
+		margin-top: calc($margin-sections - 50px);
+	}
+}

@@ -1,7 +1,7 @@
 <script>
 import { sneakersStore } from "@/stores/sneakers/sneakers"
-import CardCategory from "../Cards/CardCategory.vue";
-
+// import CardCategory from "@/components/Cards/CardCategory.vue";
+import CardCategoryList from '@/components/Cards/CardCategoryList.vue';
 export default {
 	setup() {
 		const sneakers = sneakersStore().dbSneakers;
@@ -15,7 +15,7 @@ export default {
 			return '<span>-20%</span> Discount'
 		}
 	},
-	components: { CardCategory }
+	components: { CardCategoryList }
 }
 </script>
 
@@ -23,31 +23,27 @@ export default {
 	<section class="discount">
 		<h3 class="title title--medium">Looks good. Runs Good. Feels Good
 		</h3>
-		<div class="discount__block">
-			<CardCategory v-for="sneaker in getDiscountModelsShoes" :key="sneaker.id" :titleCard="getTitleCard"
-				:textCard="'on your first purchase'"
-				:sneakerPhoto="`./photo_sneakers/sneakers/${sneaker.nameFolder}/card_preview/${sneaker.nameFolder}.webp`">
-				Shop now
-			</CardCategory>
-		</div>
+		<CardCategoryList :cardList="getDiscountModelsShoes" :textCards="'on your first purchase'"
+			:titleCards="getTitleCard">
+			Shop now
+		</CardCategoryList>
 	</section>
 </template>
 
 
 <style lang="scss" scoped>
+@import "@/styles/mixins.scss";
+
 .discount {
-	margin-top: $margin-sections;
+	@include margin-section;
 
 	h3 {
 		text-align: center;
 		text-transform: uppercase;
 	}
 
-	&__block {
+	.cards-block {
 		margin-top: $margin-sections;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 	}
 }
 </style>

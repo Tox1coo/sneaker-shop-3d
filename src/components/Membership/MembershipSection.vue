@@ -27,8 +27,10 @@ export default {
 
 
 <style lang="scss">
+@import "@/styles/mixins.scss";
+
 .membership {
-	margin-top: $margin-sections;
+	@include margin-section;
 
 	.container {
 		padding: 0;

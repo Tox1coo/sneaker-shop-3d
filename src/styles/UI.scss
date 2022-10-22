@@ -97,6 +97,7 @@ html {
 .text {
 	color: $text-color;
 	font-size: $text-big-fonts;
+	font-family: "Work Sans", sans-serif;
 	&--light {
 		font-size: $text-medium-fonts;
 		color: $text-color-light;

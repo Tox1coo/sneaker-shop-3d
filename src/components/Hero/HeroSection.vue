@@ -49,6 +49,7 @@ export default {
 		width: 50%;
 	}
 
+
 }
 
 .marquee {

@@ -82,9 +82,6 @@
 		"nameFolder": "nike_lunartempo_2",
 		"nameShoes": "Nike Lunartempo 2",
 		"linkImage": "D8hrvq2X/nike-lunartempo-2.webp",
-		"cardSetting": {
-			"type": "new"
-		},
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {
@@ -107,6 +104,9 @@
 		"nameFolder": "nike_air_max_90",
 		"nameShoes": "Nike Air Max 90",
 		"linkImage": "PNwyrXYB/nike-air-max-90.webp",
+		"cardSetting": {
+			"type": "new"
+		},
 		"settingModel": {
 			"zoomCamera": 1.5,
 			"scaleModel": {

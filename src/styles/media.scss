@@ -1,0 +1,147 @@
+@media (max-width: 1260px) {
+	.cards-block {
+		flex-direction: column;
+		gap: 25px;
+	}
+	.membership .info {
+		width: 50vw;
+	}
+}
+
+@media (max-width: 770px) {
+	.burger {
+		display: block !important;
+	}
+	.nav {
+		display: none;
+	}
+	.header__icons {
+		justify-content: flex-end !important;
+		flex: none !important;
+		&-item:not([data-icon="bucket"]) {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 719px) {
+	.swiper-slide .sneaker {
+		&__photo {
+			left: 0;
+		}
+	}
+
+	.text {
+		font-size: calc($text-big-fonts - 8px);
+	}
+	.title--medium {
+		font-size: calc($title-medium-fonts - 24px);
+	}
+	.hero {
+		flex-direction: column;
+		.info {
+			width: 100%;
+			order: 1;
+		}
+		&__image {
+			width: 100%;
+			order: 0;
+		}
+	}
+	.title {
+		font-size: calc($title-big-fonts - 56px);
+	}
+	.card-category {
+		min-height: 100%;
+		&__photo {
+			max-height: 19rem;
+		}
+	}
+	.sneakers__tops-titles .title--mild[data-v-cdd50a54]:last-child {
+		margin-top: 1rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.card-category {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0;
+		&__photo {
+			max-height: 14rem;
+			order: 0;
+			position: relative;
+			transform: none;
+		}
+		&__body {
+			width: 100%;
+			order: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.btn {
+				margin-left: 0;
+			}
+		}
+	}
+	.membership .info {
+		width: 100%;
+	}
+	.footer {
+		.logo {
+			&__item {
+				svg {
+					width: 14rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 565px) {
+	.swiper-slide .sneaker {
+		&__photo {
+			left: 5%;
+			width: 110%;
+			top: 17%;
+			min-height: 30%;
+		}
+		&__body {
+			padding: 0 1rem 0rem 0.7rem;
+		}
+	}
+
+	.footer {
+		padding: 20px 20px !important;
+		gap: 20px;
+		&__links {
+			a {
+				font-size: 1rem !important;
+			}
+		}
+	}
+	.category {
+		display: block;
+		position: relative;
+		&__photo {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+		}
+
+		&__title {
+			position: relative;
+			z-index: 2;
+			color: $primary1;
+			flex: 0 0 100% !important;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.header__title {
+		font-size: 2rem !important;
+	}
+}

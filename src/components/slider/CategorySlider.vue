@@ -16,39 +16,57 @@ import SwiperCore, { Navigation } from "swiper";
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
-import SneakerItem from "@/components/Sneakers/SneakerItem.vue"
+import SneakerItem from "@/components/Sneakers/SneakerItem.vue";
 export default {
 	props: {
 		sliderList: {
 			type: Array,
-			required: true
+			required: true,
 		},
 		titleSlider: {
 			type: String,
-			required: true
+			required: true,
+		},
+	},
+	setup() {
+		const breakpoints = {
+			1090: {
+				slidesPerView: "3",
+				spaceBetween: "50",
+				slidesPerGroup: "3"
+			},
+			570: {
+				slidesPerView: "2",
+				spaceBetween: "40",
+				slidesPerGroup: "2"
+			},
+			100: {
+				slidesPerView: "1",
+				spaceBetween: "50",
+				slidesPerGroup: "1"
+			}
 		}
+		return { breakpoints }
 	},
 	components: { Swiper, SwiperSlide, SneakerItem },
-}
+};
 </script>
 
 <template>
 	<div class="slider">
 		<div class="slider__title title title--mild title--medium">
-			{{titleSlider}}
+			{{ titleSlider }}
 		</div>
-		<swiper :slidesPerView="3" :spaceBetween="50" :slidesPerGroup="3" :navigation="true" :grab-cursor="true">
-			<swiper-slide ref="swipeItem" v-for="(sneaker) in sliderList" :key="sneaker.name">
+		<swiper :slidesPerView="3" :spaceBetween="50" :slidesPerGroup="3" :navigation="true" :grab-cursor="true"
+			:breakpoints="breakpoints">
+			<swiper-slide ref="swipeItem" v-for="sneaker in sliderList" :key="sneaker.name">
 				<SneakerItem :sneakerItem="sneaker"></SneakerItem>
 			</swiper-slide>
 		</swiper>
 	</div>
 </template>
 
-
 <style lang="scss" scoped>
-.slider {}
-
 .swiper-container {
 	padding: 0 20px;
 	margin-top: 3.3rem;

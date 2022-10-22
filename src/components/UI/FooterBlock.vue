@@ -58,7 +58,7 @@ export default {
 </template>
 
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .footer {
 	margin-top: $margin-sections;
 	min-height: 32rem;
@@ -71,6 +71,15 @@ export default {
 
 	.logo {
 		order: 2;
+
+		&__item {
+			display: flex;
+
+			svg {
+				width: 32rem;
+				height: 100%;
+			}
+		}
 	}
 
 	&__links {
@@ -78,6 +87,7 @@ export default {
 		flex-direction: column;
 		gap: 50px;
 		align-items: center;
+		text-align: center;
 
 		&:last-child {
 			order: 3;

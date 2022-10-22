@@ -24,7 +24,9 @@ export default {
 
 
 <style lang="scss" scoped>
+@import "@/styles/mixins.scss";
+
 .slider-section {
-	margin-top: $margin-sections;
+	@include margin-section;
 }
 </style>

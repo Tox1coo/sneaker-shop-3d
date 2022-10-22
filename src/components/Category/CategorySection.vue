@@ -25,8 +25,11 @@ export default {
 
 
 <style lang="scss" scoped>
+@import "@/styles/mixins.scss";
+
 .categories {
-	margin-top: $margin-sections;
+	@include margin-section;
+
 
 	&__block {
 		margin-top: 3rem;

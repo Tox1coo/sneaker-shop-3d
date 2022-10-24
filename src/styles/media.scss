@@ -102,10 +102,11 @@
 @media (max-width: 565px) {
 	.swiper-slide .sneaker {
 		&__photo {
-			left: 5%;
+			left: 10%;
 			width: 110%;
-			top: 17%;
+			top: 3%;
 			min-height: 30%;
+			max-height: 35rem;
 		}
 		&__body {
 			padding: 0 1rem 0rem 0.7rem;
@@ -143,5 +144,11 @@
 @media (max-width: 400px) {
 	.header__title {
 		font-size: 2rem !important;
+	}
+	.swiper-slide .sneaker {
+		&__photo {
+			left: 10%;
+			top: 13%;
+		}
 	}
 }

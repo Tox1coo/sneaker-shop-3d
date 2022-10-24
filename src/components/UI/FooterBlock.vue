@@ -49,7 +49,8 @@ export default {
 <template>
 	<footer class="footer">
 		<div v-for="(linkList, index) in links" :key="index" class="footer__links">
-			<RouterLink v-for="link in linkList" :key="link.title" :to="link.link">{{link.title}}</RouterLink>
+			<RouterLink class="link " v-for="link in linkList" :key="link.title" :to="link.link">{{link.title}}
+			</RouterLink>
 
 		</div>
 		<Logo :fillLogo="'none'" :strokeLogo="'white'" :widthLogo="'5'"></Logo>
@@ -97,31 +98,7 @@ export default {
 			order: 3
 		}
 
-		a {
-			color: $primary1;
-			text-transform: uppercase;
-			text-decoration: none;
-			position: relative;
-			font-size: $text-medium-fonts;
 
-			&::after {
-				content: '';
-				position: absolute;
-				display: block;
-				background-color: $primary1;
-				width: 100%;
-				height: 2px;
-				border-radius: 5px;
-				transform: scaleX(0);
-				transition: transform 0.2s ease 0s;
-			}
-
-			&:hover {
-				&::after {
-					transform: scaleX(1);
-				}
-			}
-		}
 	}
 }
 </style>

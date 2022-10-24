@@ -73,6 +73,8 @@ export default {
 		font-weight: 700;
 		flex: 0 1 33%;
 		text-align: center;
+		position: relative;
+		z-index: 1000;
 
 		span {
 			color: #a0a0a0;
@@ -91,6 +93,7 @@ export default {
 		display: flex;
 		justify-content: space-around;
 		align-items: baseline;
+		z-index: 1000;
 	}
 }
 

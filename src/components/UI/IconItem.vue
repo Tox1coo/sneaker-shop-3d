@@ -30,7 +30,6 @@ export default {
 				path.animate(colorStation, colorTiming);
 			}
 
-			console.dir(event.target);
 		},
 		inActiveHoverIcon(event) {
 			for (let index = 0; index < event.target.children.length; index++) {
